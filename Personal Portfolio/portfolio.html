@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      background-color: #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #66cdaa;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 0;
+      color: #333;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+
+    .project {
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="resume.html">Resume</a>
+    <a href="about.html">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my work and skills!</p>
+  </header>
+
+  <section id="projects" class="projects">
+    <div class="project">
+      <h2>Project 1</h2>
+      <p>Description of Project 1</p>
+    </div>
+    <div class="project">
+      <h2>Project 2</h2>
+      <p>Description of Project 2</p>
+    </div>
+    <div class="project">
+      <h2>Project 3</h2>
+      <p>Description of Project 3</p>
+    </div>
+  </section>
+</body>
+</html>

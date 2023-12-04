@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      animation: rotateBackground 20s linear infinite;
+      background-image: radial-gradient(circle, #f7f7f7, #ddd);
+    }
+
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: -1;
+      background-image: url('https://assets.codepen.io/143599/particles.png');
+      animation: animateParticles 10s linear infinite;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: scaleIn 1s ease-in-out;
+    }
+
+    p {
+      color: #666;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      animation: fadeInBtn 1s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+      animation: btnHover 0.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInBtn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes btnHover {
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes rotateBackground {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animateParticles {
+      0% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="particles"></div>
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my work and skills!</p>
+    <a href="portfolio.html" class="btn">View Portfolio</a>
+  </div>
+</body>
+</html>

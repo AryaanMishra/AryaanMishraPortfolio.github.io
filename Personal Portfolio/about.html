@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience ul,
+    .projects ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .experience ul li,
+    .projects ul li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .experience ul li::before,
+    .projects ul li::before {
+      content: '\2022';
+      color: #4CAF50;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      position: absolute;
+      left: 0;
+    }
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .back-btn a {
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .back-btn a:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <section class="about">
+    <div class="personal-summary">
+      <h2>Personal Summary</h2>
+      <p>Adaptable and dedicated student pursuing a Computer Science and Engineering degree at the University of California, Merced. 
+        Proficient in JAVA, JavaScript, Python, and C++, with a knack for problem-solving. Enthusiastic about technology, evidenced by self-initiated projects like building a computer, 
+        creating a 3D game, and contributing to cognitive science research. Actively engaged in a Cognitive Science Lab, where I designed experiments using JavaScript and HTML, 
+        incorporating custom plugins and utilizing tools like Jspsych, Pushkin, and Jatos. Experienced in local and online experiment deployment using Docker and AWS. 
+        Also, an active participant in the university's Computer Science and Engineering club. 
+        Engaged in a Car club, contributing to the ground-up construction of a vehicle. Seeking to leverage my skills, teamwork, and hands-on experience as a proactive Software Engineer.</p>
+    </div>
+
+    <div class="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Research Tech | LLNC Lab, University Of California Merced</strong><br>
+          September 2023 - Present
+          <ul>
+            <li>Designed and developed experiments focusing on cognitive tasks within the lab's research scope.</li>
+            <li>Utilized JavaScript and HTML to construct experiment frameworks, incorporating custom plugins to enhance functionality.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Real-Time Disaster and Traffic Monitoring Website</strong><br>
+            Led a team to conceptualize and develop a website allowing users to check real-time traffic conditions and natural disaster alerts in their area.
+        </li>
+        <li><strong>3D Game Development Project</strong><br>
+            Conceptualized and developed a captivating 3D game, showcasing creativity and programming prowess.
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="back-btn">
+    <a href="portfolio.html">Back to Portfolio</a>
+  </div>
+</body>
+</html>
